@@ -11,9 +11,28 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: Column(
-          children: [_constitutionButton(context), _allQuestionsButton(context)],
+          children: [
+            _constitutionButton(context),
+            _allQuestionsButton(context),
+          ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            IconButton(onPressed: null, icon: Icon(Icons.home)),
+            IconButton(onPressed: null, icon: Icon(Icons.push_pin_rounded)),
+            SizedBox(width: 30,),
+            IconButton(onPressed: null, icon: Icon(Icons.cancel_outlined)),
+            IconButton(onPressed: null, icon: Icon(Icons.settings)),
+          ],
+        ),
+      ),
+
     );
   }
 

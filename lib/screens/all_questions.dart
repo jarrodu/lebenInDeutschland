@@ -29,7 +29,7 @@ class _AllQuestionsState extends State<AllQuestions> {
       appBar: AppBar(),
       body: Center(
         child: PageView(
-          clipBehavior: Clip.antiAlias,
+          scrollDirection: Axis.horizontal,
           onPageChanged: (value) {
             optionColors = [
               Colors.black,
