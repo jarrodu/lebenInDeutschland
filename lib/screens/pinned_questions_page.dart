@@ -10,6 +10,8 @@ class PinnedQuestionsPage extends StatefulWidget {
 class _PinnedQuestionsPageState extends State<PinnedQuestionsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }

@@ -10,6 +10,8 @@ class FalseQuestionsPage extends StatefulWidget {
 class _FalseQuestionsPageState extends State<FalseQuestionsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }

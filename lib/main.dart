@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Leben In Deutschland',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: ThemeData.dark(),
         home: const HomePage(),
       ),
     );
