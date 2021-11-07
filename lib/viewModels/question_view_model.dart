@@ -8,6 +8,7 @@ class QuestionViewModel {
 
   QuestionViewModel(){
     getQuestionsFromJson();
+    print("question view model construction");
   }
 
   Future<void> getQuestionsFromJson() async {

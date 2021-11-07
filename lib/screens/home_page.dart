@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:leben_in_deutschland/screens/all_questions.dart';
 import 'package:leben_in_deutschland/screens/constitution_page.dart';
+import 'package:leben_in_deutschland/screens/exam_page.dart';
 import 'package:leben_in_deutschland/screens/false_questions_page.dart';
 import 'package:leben_in_deutschland/screens/pinned_questions_page.dart';
 import 'package:leben_in_deutschland/screens/settings_page.dart';
+import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    Provider.of<QuestionViewModel>(context, listen: false);
+
     return Scaffold(
       appBar: AppBar(),
       body: Center(
@@ -21,7 +26,14 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(child: const Icon(Icons.add), onPressed: () {}),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ExamPage(),
+            )),
+      ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
         child: Row(
@@ -35,7 +47,7 @@ class HomePage extends StatelessWidget {
                       builder: (context) => const PinnedQuestionsPage(),
                     )),
                 icon: const Icon(Icons.push_pin_rounded)),
-            SizedBox(width: 30),
+            const SizedBox(width: 30),
             IconButton(
                 onPressed: () => Navigator.push(
                     context,

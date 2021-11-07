@@ -22,14 +22,11 @@ class _QuestionWidgetState extends State<QuestionWidget> {
   ];
   @override
   Widget build(BuildContext context) {
-    translator.translate("Hello", to: 'tr').then(print);
-    print(widget.isTranslated);
+    //translator.translate("Hello", to: 'tr').then(print);
     return Center(
       child: FutureBuilder(
         future: _buildQuestion(widget.question),
         builder: (context, snapshot) {
-          print(snapshot.data);
-          print(snapshot.error);
         if (snapshot.hasData) {
           return snapshot.data as Widget;
         }
