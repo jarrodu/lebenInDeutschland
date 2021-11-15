@@ -1,0 +1,113 @@
+[
+{
+    "id": 391,
+    "category": "Nordrhein-Westfalen",
+    "question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "2"
+  },{
+    "id": 392,
+    "category": "Nordrhein-Westfalen",
+    "question": "Welches ist ein Landkreis in Nordrhein-Westfalen?",
+    "options": [
+      "Ammerland",
+      "Rhein-Sieg-Kreis",
+      "Nordfriesland",
+      "Vogtlandkreis"
+    ],
+    "correctAnswer": "Rhein-Sieg-Kreis"
+  },{
+    "id": 393,
+    "category": "Nordrhein-Westfalen",
+    "question": "Für wie viele Jahre wird der Landtag in Nordrhein-Westfalen gewählt?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": "5"
+  },{
+    "id": 394,
+    "category": "Nordrhein-Westfalen",
+    "question": "Ab welchem Alter darf man in Nordrhein-Westfalen bei Kommunalwahlen wählen?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctAnswer": "16"
+  },{
+    "id": 395,
+    "category": "Nordrhein-Westfalen",
+    "question": "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+    "options": [
+      "rot-weiß",
+      "grün-weiß-rot",
+      "schwarz-gold",
+      "blau-weiß-rot"
+    ],
+    "correctAnswer": "grün-weiß-rot"
+  },{
+    "id": 396,
+    "category": "Nordrhein-Westfalen",
+    "question": "Wo können Sie sich in Nordrhein-Westfalen über politische Themen informieren?",
+    "options": [
+      "bei den Kirchen",
+      "beim Ordnungsamt der Gemeinde",
+      "bei der Verbraucherzentrale",
+      "bei der Landeszentrale für politische Bildung"
+    ],
+    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+  },{
+    "id": 397,
+    "category": "Nordrhein-Westfalen",
+    "question": "Die Landeshauptstadt von Nordrhein-Westfalen heißt …",
+    "options": [
+      "Köln.",
+      "Bonn.",
+      "Düsseldorf.",
+      "Dortmund."
+    ],
+    "correctAnswer": "Düsseldorf."
+  },{
+    "id": 398,
+    "category": "Nordrhein-Westfalen",
+    "question": "Welches Bundesland ist Nordrhein-Westfalen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "3"
+  },{
+    "id": 399,
+    "category": "Nordrhein-Westfalen",
+    "question": "Wie nennt man den Regierungschef / die Regierungschefin in Nordrhein-Westfalen?",
+    "options": [
+      "Erster Minister / Erste Ministerin",
+      "Premierminister / Premierministerin",
+      "Bürgermeister / Bürgermeisterin",
+      "Ministerpräsident / Ministerpräsidentin"
+    ],
+    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+  },{
+    "id": 400,
+    "category": "Nordrhein-Westfalen",
+    "question": "Welchen Minister / welche Ministerin hat Nordrhein-Westfalen nicht?",
+    "options": [
+      "Justizminister / Justizministerin",
+      "Außenminister / Außenministerin",
+      "Finanzminister / Finanzministerin",
+      "Innenminister / Innenministerin"
+    ],
+    "correctAnswer": "Außenminister / Außenministerin"
+  }
+]

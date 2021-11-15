@@ -1,0 +1,113 @@
+[
+{
+    "id": 381,
+    "category": "Niedersachsen",
+    "question": "Welches Wappen gehört zum Bundesland Niedersachsen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "3"
+  },{
+    "id": 382,
+    "category": "Niedersachsen",
+    "question": "Welches ist ein Landkreis in Niedersachsen?",
+    "options": [
+      "Ammerland",
+      "Rhein-Sieg-Kreis",
+      "Nordfriesland",
+      "Vogtlandkreis"
+    ],
+    "correctAnswer": "Ammerland"
+  },{
+    "id": 383,
+    "category": "Niedersachsen",
+    "question": "Für wie viele Jahre wird der Landtag in Niedersachsen gewählt?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": "5"
+  },{
+    "id": 384,
+    "category": "Niedersachsen",
+    "question": "Ab welchem Alter darf man in Niedersachsen bei Kommunalwahlen wählen?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctAnswer": "16"
+  },{
+    "id": 385,
+    "category": "Niedersachsen",
+    "question": "Welche Farben hat die Landesflagge von Niedersachsen?",
+    "options": [
+      "rot-weiß",
+      "schwarz-rot-gold",
+      "schwarz-gelb",
+      "blau-weiß-rot"
+    ],
+    "correctAnswer": "schwarz-rot-gold"
+  },{
+    "id": 386,
+    "category": "Niedersachsen",
+    "question": "Wo können Sie sich in Niedersachsen über politische Themen informieren?",
+    "options": [
+      "beim Koordinator für politische Bildung im Kultusministerium",
+      "beim Ordnungsamt der Gemeinde",
+      "bei der Verbraucherzentrale",
+      "bei den Kirchen"
+    ],
+    "correctAnswer": "beim Koordinator für politische Bildung im Kultusministerium"
+  },{
+    "id": 387,
+    "category": "Niedersachsen",
+    "question": "Die Landeshauptstadt von Niedersachsen heißt …",
+    "options": [
+      "Hannover.",
+      "Braunschweig.",
+      "Wolfsburg.",
+      "Osnabrück."
+    ],
+    "correctAnswer": "Hannover."
+  },{
+    "id": 388,
+    "category": "Niedersachsen",
+    "question": "Welches Bundesland ist Niedersachsen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "1"
+  },{
+    "id": 389,
+    "category": "Niedersachsen",
+    "question": "Wie nennt man den Regierungschef / die Regierungschefin in Niedersachsen?",
+    "options": [
+      "Erster Minister / Erste Ministerin",
+      "Premierminister / Premierministerin",
+      "Bürgermeister / Bürgermeisterin",
+      "Ministerpräsident / Ministerpräsidentin"
+    ],
+    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+  },{
+    "id": 390,
+    "category": "Niedersachsen",
+    "question": "Welchen Minister / welche Ministerin hat Niedersachsen nicht?",
+    "options": [
+      "Justizminister / Justizministerin",
+      "Außenminister / Außenministerin",
+      "Finanzminister / Finanzministerin",
+      "Innenminister / Innenministerin"
+    ],
+    "correctAnswer": "Außenminister / Außenministerin"
+  }
+]

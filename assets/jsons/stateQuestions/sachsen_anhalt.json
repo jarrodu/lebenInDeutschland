@@ -1,0 +1,113 @@
+[
+{
+    "id": 431,
+    "category": "Sachsen-Anhalt",
+    "question": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "4"
+  },{
+    "id": 432,
+    "category": "Sachsen-Anhalt",
+    "question": "Welches ist ein Landkreis in Sachsen-Anhalt?",
+    "options": [
+      "Ammerland",
+      "Altötting",
+      "Uckermark",
+      "Börde"
+    ],
+    "correctAnswer": "Börde"
+  },{
+    "id": 433,
+    "category": "Sachsen-Anhalt",
+    "question": "Für wie viele Jahre wird der Landtag in Sachsen-Anhalt gewählt?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": "5"
+  },{
+    "id": 434,
+    "category": "Sachsen-Anhalt",
+    "question": "Ab welchem Alter darf man in Sachsen-Anhalt bei Kommunalwahlen wählen?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctAnswer": "16"
+  },{
+    "id": 435,
+    "category": "Sachsen-Anhalt",
+    "question": "Welche Farben hat die Landesflagge von Sachsen-Anhalt?",
+    "options": [
+      "blau-weiß-rot",
+      "gelb-schwarz",
+      "grün-weiß-rot",
+      "weiß-rot"
+    ],
+    "correctAnswer": "gelb-schwarz"
+  },{
+    "id": 436,
+    "category": "Sachsen-Anhalt",
+    "question": "Wo können Sie sich in Sachsen-Anhalt über politische Themen informieren?",
+    "options": [
+      "bei den Kirchen",
+      "bei der Landeszentrale für politische Bildung",
+      "beim Ordnungsamt der Gemeinde",
+      "bei der Verbraucherzentrale"
+    ],
+    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+  },{
+    "id": 437,
+    "category": "Sachsen-Anhalt",
+    "question": "Die Landeshauptstadt von Sachsen-Anhalt heißt …",
+    "options": [
+      "Halle.",
+      "Dessau.",
+      "Magdeburg.",
+      "Wittenberg."
+    ],
+    "correctAnswer": "Magdeburg."
+  },{
+    "id": 438,
+    "category": "Sachsen-Anhalt",
+    "question": "Welches Bundesland ist Sachsen-Anhalt?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "3"
+  },{
+    "id": 439,
+    "category": "Sachsen-Anhalt",
+    "question": "Wie nennt man den Regierungschef / die Regierungschefin in Sachsen-Anhalt?",
+    "options": [
+      "Erster Minister / Erste Ministerin",
+      "Premierminister / Premierministerin",
+      "Bürgermeister / Bürgermeisterin",
+      "Ministerpräsident / Ministerpräsidentin"
+    ],
+    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+  },{
+    "id": 440,
+    "category": "Sachsen-Anhalt",
+    "question": "Welchen Minister / welche Ministerin hat Sachsen-Anhalt nicht?",
+    "options": [
+      "Justizminister / Justizministerin",
+      "Außenminister / Außenministerin",
+      "Finanzminister / Finanzministerin",
+      "Innenminister / Innenministerin"
+    ],
+    "correctAnswer": "Außenminister / Außenministerin"
+  }
+]

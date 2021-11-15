@@ -1,0 +1,113 @@
+[
+{
+    "id": 421,
+    "category": "Sachsen",
+    "question": "Welches Wappen gehört zum Freistaat Sachsen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "4"
+  },{
+    "id": 422,
+    "category": "Sachsen",
+    "question": "Welches ist ein Landkreis in Sachsen?",
+    "options": [
+      "Vogtlandkreis",
+      "Altötting",
+      "Uckermark",
+      "Nordfriesland"
+    ],
+    "correctAnswer": "Vogtlandkreis"
+  },{
+    "id": 423,
+    "category": "Sachsen",
+    "question": "Für wie viele Jahre wird der Landtag in Sachsen gewählt?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": "5"
+  },{
+    "id": 424,
+    "category": "Sachsen",
+    "question": "Ab welchem Alter darf man in Sachsen bei Kommunalwahlen wählen?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctAnswer": "18"
+  },{
+    "id": 425,
+    "category": "Sachsen",
+    "question": "Welche Farben hat die Landesflagge von Sachsen?",
+    "options": [
+      "blau-weiß-rot",
+      "weiß-grün",
+      "grün-weiß-rot",
+      "schwarz-gelb"
+    ],
+    "correctAnswer": "weiß-grün"
+  },{
+    "id": 426,
+    "category": "Sachsen",
+    "question": "Wo können Sie sich in Sachsen über politische Themen informieren?",
+    "options": [
+      "bei der Landeszentrale für politische Bildung",
+      "beim Ordnungsamt der Gemeinde",
+      "bei den Kirchen",
+      "bei der Verbraucherzentrale"
+    ],
+    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+  },{
+    "id": 427,
+    "category": "Sachsen",
+    "question": "Die Landeshauptstadt von Sachsen heißt …",
+    "options": [
+      "Leipzig.",
+      "Dresden.",
+      "Chemnitz.",
+      "Zwickau."
+    ],
+    "correctAnswer": "Dresden."
+  },{
+    "id": 428,
+    "category": "Sachsen",
+    "question": "Welches Bundesland ist Sachsen?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "4"
+  },{
+    "id": 429,
+    "category": "Sachsen",
+    "question": "Wie nennt man den Regierungschef / die Regierungschefin in Sachsen?",
+    "options": [
+      "Erster Minister / Erste Ministerin",
+      "Premierminister / Premierministerin",
+      "Bürgermeister / Bürgermeisterin",
+      "Ministerpräsident / Ministerpräsidentin"
+    ],
+    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+  },{
+    "id": 430,
+    "category": "Sachsen",
+    "question": "Welchen Minister / welche Ministerin hat Sachsen nicht?",
+    "options": [
+      "Justizminister / Justizministerin",
+      "Außenminister / Außenministerin",
+      "Finanzminister / Finanzministerin",
+      "Innenminister / Innenministerin"
+    ],
+    "correctAnswer": "Außenminister / Außenministerin"
+  }
+]

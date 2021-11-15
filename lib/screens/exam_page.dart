@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:leben_in_deutschland/models/question_model.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
 import 'package:leben_in_deutschland/widgets/question_widget.dart';
+import 'package:leben_in_deutschland/widgets/timer_widget.dart';
 import 'package:provider/provider.dart';
 
 class ExamPage extends StatefulWidget {
@@ -24,7 +25,10 @@ class _ExamPageState extends State<ExamPage> {
     }
     _questions.shuffle();
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const TimerWidget(),
+        centerTitle: true,
+      ),
       body: Center(
         child: PageView(
           controller: controller,

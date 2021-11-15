@@ -4,14 +4,15 @@ import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
 import 'package:leben_in_deutschland/widgets/question_widget.dart';
 import 'package:provider/provider.dart';
 
-class AllQuestions extends StatefulWidget {
-  const AllQuestions({Key? key}) : super(key: key);
+class StateQuestionPage extends StatefulWidget {
+  final int _selectedStateIndex;
+  const StateQuestionPage(this._selectedStateIndex, {Key? key}) : super(key: key);
 
   @override
-  State<AllQuestions> createState() => _AllQuestionsState();
+  State<StateQuestionPage> createState() => _StateQuestionPageState();
 }
 
-class _AllQuestionsState extends State<AllQuestions> {
+class _StateQuestionPageState extends State<StateQuestionPage> {
   final controller = PageController();
   bool? isTrue;
   List<Color> optionColors = [
@@ -30,8 +31,8 @@ class _AllQuestionsState extends State<AllQuestions> {
   @override
   Widget build(BuildContext context) {
     final QuestionViewModel _questionsViewModel = Provider.of<QuestionViewModel>(context);
-    final List<QuestionModel>? questions = _questionsViewModel.questions;
-
+    final List<QuestionModel>? stateQuestions =
+        _questionsViewModel.statesQuestions[widget._selectedStateIndex];
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -47,8 +48,9 @@ class _AllQuestionsState extends State<AllQuestions> {
       ),
       body: Center(
         child: PageView.builder(
+          itemCount: stateQuestions!.length,
           itemBuilder: (context, index) {
-            return _buildQuestionPages(questions!, index);
+            return _buildQuestionPages(stateQuestions, index);
           },
           allowImplicitScrolling: true,
           controller: controller,
@@ -58,15 +60,15 @@ class _AllQuestionsState extends State<AllQuestions> {
     );
   }
 
-  Widget _buildQuestionPages(List<QuestionModel> questions, int i)  {
+   Widget _buildQuestionPages(List<QuestionModel> stateQuestions, int i)  {
     //for (var i = 0; i < questions.length; i++) {
       return ValueListenableBuilder<int>(
         valueListenable: counter,
         builder: (context, value, _) {
           if (value == i) {
-            return QuestionWidget(questions[i], true);
+            return QuestionWidget(stateQuestions[i], true);
           } else {
-            return QuestionWidget(questions[i], false);
+            return QuestionWidget(stateQuestions[i], false);
           }
         },
       );
