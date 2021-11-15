@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:leben_in_deutschland/models/question_model.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
 import 'package:leben_in_deutschland/widgets/question_widget.dart';
-import 'package:leben_in_deutschland/widgets/timer_widget.dart';
 import 'package:provider/provider.dart';
+import 'package:slide_countdown/slide_countdown.dart';
 
 class ExamPage extends StatefulWidget {
   const ExamPage({Key? key}) : super(key: key);
@@ -13,8 +13,7 @@ class ExamPage extends StatefulWidget {
 }
 
 class _ExamPageState extends State<ExamPage> {
-  final controller = PageController();
-  final counter = ValueNotifier<int>(-1);
+  final controller = PageController(keepPage: true);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +25,9 @@ class _ExamPageState extends State<ExamPage> {
     _questions.shuffle();
     return Scaffold(
       appBar: AppBar(
-        title: const TimerWidget(),
+        title: const SlideCountdown(
+          duration: Duration(minutes: 60),
+        ),
         centerTitle: true,
       ),
       body: Center(
@@ -40,16 +41,7 @@ class _ExamPageState extends State<ExamPage> {
 
   Iterable<Widget> _buildQuestionPages(List<QuestionModel> questions) sync* {
     for (var i = 0; i < 30; i++) {
-      yield ValueListenableBuilder<int>(
-        valueListenable: counter,
-        builder: (context, value, _) {
-          if (value == i) {
-            return QuestionWidget(questions[i], true);
-          } else {
-            return QuestionWidget(questions[i], false);
-          }
-        },
-      );
+      yield QuestionWidget(questions[i], false);
     }
   }
 }

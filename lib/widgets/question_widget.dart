@@ -11,7 +11,7 @@ class QuestionWidget extends StatefulWidget {
   _QuestionWidgetState createState() => _QuestionWidgetState();
 }
 
-class _QuestionWidgetState extends State<QuestionWidget> {
+class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAliveClientMixin {
   final translator = GoogleTranslator();
   bool? _isAnswered;
   List<Color>? optionColors;
@@ -29,6 +29,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     //translator.translate("Hello", to: 'tr').then(print);
     return Center(
         child: FutureBuilder(
@@ -160,4 +161,8 @@ class _QuestionWidgetState extends State<QuestionWidget> {
       );
     }
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }
