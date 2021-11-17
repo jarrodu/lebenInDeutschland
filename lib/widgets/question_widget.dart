@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:leben_in_deutschland/enums/enums.dart';
 import 'package:leben_in_deutschland/models/question_model.dart';
+import 'package:leben_in_deutschland/viewModels/exam_result_view_model.dart';
+import 'package:provider/provider.dart';
 import 'package:translator/translator.dart';
 
 class QuestionWidget extends StatefulWidget {
   final QuestionModel question;
   final bool isTranslated;
-  const QuestionWidget(this.question, this.isTranslated, {Key? key}) : super(key: key);
+  final PageType _pageType;
+  const QuestionWidget(this.question, this.isTranslated, this._pageType, {Key? key})
+      : super(key: key);
 
   @override
   _QuestionWidgetState createState() => _QuestionWidgetState();
@@ -30,10 +35,12 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    final ExamResultViewModel _examResultViewModel = Provider.of<ExamResultViewModel>(context);
+
     //translator.translate("Hello", to: 'tr').then(print);
     return Center(
         child: FutureBuilder(
-      future: _buildQuestion(widget.question),
+      future: _buildQuestion(widget.question, _examResultViewModel),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return snapshot.data as Widget;
@@ -85,7 +92,7 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
     );
   }
 
-  Column _buildQuestionOptions(QuestionModel question) {
+  Column _buildQuestionOptions(QuestionModel question, ExamResultViewModel examResultViewModel) {
     return Column(
       children: List.generate(
         4,
@@ -97,7 +104,7 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
                   alignment: Alignment.center,
                   fixedSize: Size(MediaQuery.of(context).size.width * 0.95, 50)),
               onPressed: () {
-                controlQuestion(question, optionIndex);
+                controlQuestion(question, optionIndex, examResultViewModel);
               },
               child: Text(question.options[optionIndex])),
         ),
@@ -105,10 +112,14 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
     );
   }
 
-  void controlQuestion(QuestionModel question, int optionIndex) {
+  void controlQuestion(
+      QuestionModel question, int optionIndex, ExamResultViewModel examResultViewModel) {
     if (!_isAnswered!) {
       if (question.options[optionIndex] == question.correctAnswer) {
         optionColors![optionIndex] = Colors.green;
+        if (widget._pageType == PageType.examPage) {
+          examResultViewModel.addCorrectCount();
+        }
       } else {
         optionColors![optionIndex] = Colors.red;
         for (var i = 0; i < question.options.length; i++) {
@@ -116,13 +127,21 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
             optionColors![i] = Colors.green;
           }
         }
+        if (widget._pageType == PageType.examPage) {
+          examResultViewModel.addFalseCount();
+        }
       }
       _isAnswered = true;
+      print(examResultViewModel.examResult.correctQuestionCount.toString() + "true");
+      print(examResultViewModel.examResult.falseQuestionCount.toString() + "false");
+      print("-------------");
+
       setState(() {});
     }
   }
 
-  Future<Widget> _buildQuestion(QuestionModel question) async {
+  Future<Widget> _buildQuestion(
+      QuestionModel question, ExamResultViewModel examResultViewModel) async {
     //await translator.translate(question.question, to: 'tr').then((value) => print(value));
     if (widget.isTranslated) {
       String tQuestion = await translator
@@ -147,7 +166,7 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
           _buildQuestionNumberCard(translatedQuestion),
           _buildQuestionText(translatedQuestion),
           //TODO image
-          _buildQuestionOptions(translatedQuestion),
+          _buildQuestionOptions(translatedQuestion, examResultViewModel),
         ],
       );
     } else {
@@ -156,13 +175,12 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
           Align(alignment: Alignment.centerLeft, child: _buildQuestionNumberCard(question)),
           _buildQuestionText(question),
           //TODO image
-          _buildQuestionOptions(question),
+          _buildQuestionOptions(question, examResultViewModel),
         ],
       );
     }
   }
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

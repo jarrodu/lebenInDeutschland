@@ -3,6 +3,7 @@ import 'package:leben_in_deutschland/cache/cache_manager.dart';
 import 'package:leben_in_deutschland/provider/theme_notifier.dart';
 import 'package:leben_in_deutschland/screens/home_page.dart';
 import 'package:leben_in_deutschland/theme/custom_theme.dart';
+import 'package:leben_in_deutschland/viewModels/exam_result_view_model.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
 import 'package:provider/provider.dart';
 
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider<QuestionViewModel>(create: (_) => QuestionViewModel()),
+        Provider<ExamResultViewModel>(create: (_) => ExamResultViewModel()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

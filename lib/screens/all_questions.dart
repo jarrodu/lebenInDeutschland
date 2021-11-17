@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leben_in_deutschland/enums/enums.dart';
 import 'package:leben_in_deutschland/models/question_model.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
 import 'package:leben_in_deutschland/widgets/question_widget.dart';
@@ -64,9 +65,9 @@ class _AllQuestionsState extends State<AllQuestions> {
         valueListenable: counter,
         builder: (context, value, _) {
           if (value == i) {
-            return QuestionWidget(questions[i], true);
+            return QuestionWidget(questions[i], true, PageType.allQuestionPage);
           } else {
-            return QuestionWidget(questions[i], false);
+            return QuestionWidget(questions[i], false,PageType.allQuestionPage);
           }
         },
       );
