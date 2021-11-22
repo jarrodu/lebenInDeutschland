@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leben_in_deutschland/cache/cache_manager.dart';
 import 'package:leben_in_deutschland/enums/enums.dart';
 import 'package:leben_in_deutschland/models/question_model.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
@@ -22,26 +23,60 @@ class _AllQuestionsState extends State<AllQuestions> {
     Colors.black,
   ];
   final counter = ValueNotifier<int>(-1);
+
+  late int page;
+
+  List<int>? pinnedQuestions;
+  late bool isPinned;
+  @override
+  void initState() {
+    super.initState();
+    getPinned();
+    page = 0;
+  }
+
   @override
   void dispose() {
     controller.dispose();
     super.dispose();
   }
 
+  void getPinned() async {
+    pinnedQuestions = (await CacheManager.instance.getPinnedQuestions())!;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final QuestionViewModel _questionsViewModel = Provider.of<QuestionViewModel>(context);
+    final QuestionViewModel _questionsViewModel =
+        Provider.of<QuestionViewModel>(context);
     final List<QuestionModel>? questions = _questionsViewModel.questions;
+
+    pinnedQuestions == null ? isPinned = false : searchIsPinned(page + 1);
 
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.push_pin_outlined)),
+          IconButton(
+              onPressed: () async {
+                searchIsPinned(page + 1);
+                if (isPinned) {
+                  pinnedQuestions!.remove(page + 1);
+                  isPinned = false;
+                } else {
+                  pinnedQuestions!.add(page + 1);
+                  isPinned = true;
+                }
+                CacheManager.instance.setPinnedQuestiona(pinnedQuestions!);
+                pinnedQuestions =
+                    await CacheManager.instance.getPinnedQuestions();
+                setState(() {});
+              },
+              icon: isPinned
+                  ? const Icon(Icons.push_pin)
+                  : const Icon(Icons.push_pin_outlined)),
           IconButton(
               onPressed: () {
                 counter.value = controller.page!.toInt();
-                print(counter.value);
-                print(controller.page);
               },
               icon: const Icon(Icons.translate)),
         ],
@@ -53,24 +88,31 @@ class _AllQuestionsState extends State<AllQuestions> {
           },
           allowImplicitScrolling: true,
           controller: controller,
-          //children: _buildQuestionPages(questions!).toList(),
+          onPageChanged: (value) {
+            searchIsPinned(value + 1);
+            page = value;
+            setState(() {});
+          },
         ),
       ),
     );
   }
 
-  Widget _buildQuestionPages(List<QuestionModel> questions, int i)  {
-    //for (var i = 0; i < questions.length; i++) {
-      return ValueListenableBuilder<int>(
-        valueListenable: counter,
-        builder: (context, value, _) {
-          if (value == i) {
-            return QuestionWidget(questions[i], true, PageType.allQuestionPage);
-          } else {
-            return QuestionWidget(questions[i], false,PageType.allQuestionPage);
-          }
-        },
-      );
-    //}
+  void searchIsPinned(int id) {
+    pinnedQuestions!.contains(id) ? isPinned = true : isPinned = false;
+  }
+
+  Widget _buildQuestionPages(List<QuestionModel> questions, int i) {
+    return ValueListenableBuilder<int>(
+      valueListenable: counter,
+      builder: (context, value, _) {
+        if (value == i) {
+          return QuestionWidget(questions[i], true, PageType.allQuestionPage);
+        } else {
+          return QuestionWidget(questions[i], false, PageType.allQuestionPage);
+        }
+      },
+    );
+    
   }
 }

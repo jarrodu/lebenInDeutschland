@@ -1,1 +1,1 @@
-enum PageType { allQuestionPage, stateQuestionPage, examPage }
+enum PageType { allQuestionPage, stateQuestionPage, examPage, pinnedQuestionsPage }

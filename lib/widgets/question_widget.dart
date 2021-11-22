@@ -132,9 +132,9 @@ class _QuestionWidgetState extends State<QuestionWidget> with AutomaticKeepAlive
         }
       }
       _isAnswered = true;
-      print(examResultViewModel.examResult.correctQuestionCount.toString() + "true");
-      print(examResultViewModel.examResult.falseQuestionCount.toString() + "false");
-      print("-------------");
+      // print(examResultViewModel.examResult.correctQuestionCount.toString() + "true");
+      // print(examResultViewModel.examResult.falseQuestionCount.toString() + "false");
+      // print("-------------");
 
       setState(() {});
     }
