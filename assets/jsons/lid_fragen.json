@@ -192,12 +192,12 @@
     "category": "Grundrechte",
     "question": "Die deutschen Gesetze verbieten …",
     "options": [
-      "Grundgesetz",
-      "Bundesverfassung",
-      "Gesetzbuch",
-      "Verfassungsvertrag"
+      "Meinungsfreiheit der Einwohner und Einwohnerinnen.",
+      "Petitionen der Bürger und Bürgerinnen",
+      "Versammlungsfreiheit der Einwohner und Einwohnerinnen.",
+      "Ungleichbehandlung der Bürger und Bürgerinnen durch den Staat."
     ],
-    "correctAnswer": "Grundgesetz"
+    "correctAnswer": "Ungleichbehandlung der Bürger und Bürgerinnen durch den Staat."
   },{
     "id": 18,
     "category": "Grundrechte",
