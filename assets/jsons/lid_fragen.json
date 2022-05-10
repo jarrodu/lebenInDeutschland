@@ -388,6 +388,7 @@
     "category": "Grundrechte",
     "question": "Die deutschen Gesetze verbieten …",
     "options": [
+<<<<<<< HEAD
       {
         "text": "Grundgesetz",
         "is_Correct": true
@@ -408,6 +409,15 @@
     "hasImage": false
   },
   {
+=======
+      "Meinungsfreiheit der Einwohner und Einwohnerinnen.",
+      "Petitionen der Bürger und Bürgerinnen",
+      "Versammlungsfreiheit der Einwohner und Einwohnerinnen.",
+      "Ungleichbehandlung der Bürger und Bürgerinnen durch den Staat."
+    ],
+    "correctAnswer": "Ungleichbehandlung der Bürger und Bürgerinnen durch den Staat."
+  },{
+>>>>>>> babf0b86fd036ecd66eda75af55f716ce51d29a8
     "id": 18,
     "category": "Grundrechte",
     "question": "Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?",
@@ -3964,6 +3974,7 @@
     "category": "Wichtige Stationen nach 1945",
     "question": "Bei welchen Demonstrationen in Deutschland riefen die Menschen \"Wir sind das Volk\"?",
     "options": [
+<<<<<<< HEAD
       {
         "text": "beim Arbeiteraufstand 1953 in der DDR",
         "is_Correct": false
@@ -3984,6 +3995,15 @@
     "hasImage": false
   },
   {
+=======
+      "beim Arbeiteraufstand 1953 in der DDR",
+      "bei den Demonstrationen 1968 in der Bundesrepublik Deutschland",
+      "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland",
+      "bei den Montagsdemonstrationen 1989 in der DDR"
+    ],
+    "correctAnswer": "bei den Montagsdemonstrationen 1989 in der DDR"
+  },{
+>>>>>>> babf0b86fd036ecd66eda75af55f716ce51d29a8
     "id": 167,
     "category": "Wichtige Stationen nach 1945",
     "question": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschland als „Alliierte Besatzungsmächte“ bezeichnet?",
@@ -5644,6 +5664,7 @@
     "category": "Deutschland in Europa",
     "question": "Wie viele Mitgliedstaaten hat die EU heute?",
     "options": [
+<<<<<<< HEAD
       {
         "text": "21",
         "is_Correct": false
@@ -5664,6 +5685,15 @@
     "hasImage": false
   },
   {
+=======
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "correctAnswer": "27"
+  },{
+>>>>>>> babf0b86fd036ecd66eda75af55f716ce51d29a8
     "id": 237,
     "category": "Deutschland in Europa",
     "question": "2007 wurde das 50-jährige Jubiläum der „Römischen Verträge“ gefeiert. Was war der Inhalt der Verträge?",
@@ -7180,6 +7210,7 @@
     "category": "Migrationsgeschichte",
     "question": "Aus welchem Land kamen die ersten Gastarbeiter / Gastarbeiterinnen nach Deutschland?",
     "options": [
+<<<<<<< HEAD
       {
         "text": "Italien",
         "is_Correct": true
@@ -7198,5 +7229,13 @@
       }
     ],
     "hasImage": false
+=======
+      "Italien",
+      "Spanien",
+      "Portugal",
+      "Türkei"
+    ],
+    "correctAnswer": "Italien"
+>>>>>>> babf0b86fd036ecd66eda75af55f716ce51d29a8
   }
 ]
