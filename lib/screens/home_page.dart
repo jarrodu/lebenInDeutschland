@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:leben_in_deutschland/screens/all_questions.dart';
-import 'package:leben_in_deutschland/screens/choose_state_page.dart';
-import 'package:leben_in_deutschland/screens/constitution_page.dart';
-import 'package:leben_in_deutschland/screens/exam_page.dart';
-import 'package:leben_in_deutschland/screens/false_questions_page.dart';
-import 'package:leben_in_deutschland/screens/pinned_questions_page.dart';
-import 'package:leben_in_deutschland/screens/settings_page.dart';
+import 'package:leben_in_deutschland/constants/constants.dart';
+import 'package:leben_in_deutschland/enums/enums.dart';
+import 'package:leben_in_deutschland/extensions/context_extension.dart';
+import 'package:leben_in_deutschland/screens/stateQuestionsPages/choose_state_page.dart';
 import 'package:leben_in_deutschland/viewModels/question_view_model.dart';
+import 'package:leben_in_deutschland/widgets/homeWidgets/home_bottom_navbar_item_button.dart';
+import 'package:leben_in_deutschland/widgets/homeWidgets/home_menu_item_button.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,22 +17,32 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(),
-      body: Center(
-        child: Column(
-          children: [
-            _constitutionButton(context),
-            _allQuestionsButton(context),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ChooseStatePage(),
-                      ));
-                },
-                child: const Text("Landesbezogene Fragen"))
-          ],
-        ),
+      body: Column(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Image.asset(
+              "assets/logos/app_logo_nobg.png",
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Center(
+              child: SizedBox(
+                width: context.width * 0.9,
+                height: context.height * 0.6,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    HomeMenuItemButton(constitutionMenuItemModel),
+                    HomeMenuItemButton(allQuestionsMenuItemModel),
+                    HomeMenuItemButton(stateQuestionsMenuItemModel),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: _buildExamFAB(context),
@@ -42,11 +51,11 @@ class HomePage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _buildHomeButton(),
-            _buildPinnedQuestionButton(context),
+            _buildHomeButton(context),
+            HomeBottomNavbarItemButton(pinnedQuestionsNavbarItemModel),
             const SizedBox(width: 30),
-            _buildFalseQuestionsButton(context),
-            _buildSettingButton(context),
+            HomeBottomNavbarItemButton(allExamResultNavbarItemModel),
+            HomeBottomNavbarItemButton(settingsNavbarItemModel),
           ],
         ),
       ),
@@ -55,64 +64,20 @@ class HomePage extends StatelessWidget {
 
   FloatingActionButton _buildExamFAB(BuildContext context) {
     return FloatingActionButton(
-      child: const Icon(Icons.add),
+      child: const Icon(
+        Icons.edit_note,
+        color: Colors.black,
+        size: 30,
+      ),
       onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ExamPage(),
+            builder: (context) => const ChooseStatePage(PageType.examPage),
           )),
     );
   }
 
-  IconButton _buildSettingButton(BuildContext context) {
-    return IconButton(
-        onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const SettingsPage(),
-            )),
-        icon: const Icon(Icons.settings));
-  }
-
-  IconButton _buildFalseQuestionsButton(BuildContext context) {
-    return IconButton(
-        onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const FalseQuestionsPage(),
-            )),
-        icon: const Icon(Icons.cancel_outlined));
-  }
-
-  IconButton _buildPinnedQuestionButton(BuildContext context) {
-    return IconButton(
-        onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const PinnedQuestionsPage(),
-            )),
-        icon: const Icon(Icons.push_pin_rounded));
-  }
-
-  IconButton _buildHomeButton() => IconButton(onPressed: () {}, icon: const Icon(Icons.home));
-
-  ElevatedButton _allQuestionsButton(BuildContext context) => ElevatedButton(
-        onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const AllQuestions(),
-            )),
-        child: const Text("Alle Fragen"),
-      );
-
-  ElevatedButton _constitutionButton(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const ConstitutionPage(),
-          )),
-      child: const Text("Grundgesetz"),
-    );
+  IconButton _buildHomeButton(BuildContext context) {
+    return IconButton(onPressed: () {}, icon: const Icon(Icons.home));
   }
 }
