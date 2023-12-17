@@ -4,110 +4,110 @@
     "category": "Schleswig-Holstein",
     "question": "Welches Wappen gehört zum Bundesland Schleswig-Holstein?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": false},
+      {"text": "2","is_Correct": false},
+      {"text": "3","is_Correct": true},
+      {"text": "4","is_Correct": false}
     ],
-    "correctAnswer": "3"
+    "hasImage": true
   },{
     "id": 442,
     "category": "Schleswig-Holstein",
     "question": "Welches ist ein Landkreis in Schleswig-Holstein?",
     "options": [
-      "Ammerland",
-      "Demmin",
-      "Nordfriesland",
-      "Rhein-Sieg-Kreis"
+      {"text": "Ammerland","is_Correct": false},
+      {"text": "Demmin","is_Correct": false},
+      {"text": "Nordfriesland","is_Correct": true},
+      {"text": "Rhein-Sieg-Kreis","is_Correct": false}
     ],
-    "correctAnswer": "Nordfriesland"
+    "hasImage": false
   },{
     "id": 443,
     "category": "Schleswig-Holstein",
     "question": "Für wie viele Jahre wird der Landtag in Schleswig-Holstein gewählt?",
     "options": [
-      "3",
-      "4",
-      "5",
-      "6"
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false},
+      {"text": "5","is_Correct": true},
+      {"text": "6","is_Correct": false}
     ],
-    "correctAnswer": "5"
+    "hasImage": false
   },{
     "id": 444,
     "category": "Schleswig-Holstein",
     "question": "Ab welchem Alter darf man in Schleswig-Holstein bei Kommunalwahlen wählen?",
     "options": [
-      "14",
-      "16",
-      "18",
-      "20"
+      {"text": "14","is_Correct": false},
+      {"text": "16","is_Correct": true},
+      {"text": "18","is_Correct": false},
+      {"text": "20","is_Correct": false}
     ],
-    "correctAnswer": "16"
+    "hasImage": false
   },{
     "id": 445,
     "category": "Schleswig-Holstein",
     "question": "Welche Farben hat die Landesflagge von Schleswig-Holstein?",
     "options": [
-      "weiß-blau",
-      "blau-weiß-rot",
-      "weiß-rot",
-      "grün-weiß-rot"
+      {"text": "weiß-blau","is_Correct": false},
+      {"text": "blau-weiß-rot","is_Correct": true},
+      {"text": "weiß-rot","is_Correct": false},
+      {"text": "grün-weiß-rot","is_Correct": false}
     ],
-    "correctAnswer": "blau-weiß-rot"
+    "hasImage": false
   },{
     "id": 446,
     "category": "Schleswig-Holstein",
     "question": "Wo können Sie sich in Schleswig-Holstein über politische Themen informieren?",
     "options": [
-      "bei der Verbraucherzentrale",
-      "beim Ordnungsamt der Gemeinde",
-      "bei der Landeszentrale für politische Bildung",
-      "bei den Kirchen"
+      {"text": "bei der Verbraucherzentrale","is_Correct": false},
+      {"text": "beim Ordnungsamt der Gemeinde","is_Correct": false},
+      {"text": "bei der Landeszentrale für politische Bildung","is_Correct": true},
+      {"text": "bei den Kirchen","is_Correct": false}
     ],
-    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+    "hasImage": false
   },{
     "id": 447,
     "category": "Schleswig-Holstein",
     "question": "Die Landeshauptstadt von Schleswig-Holstein heißt …",
     "options": [
-      "Husum.",
-      "Flensburg.",
-      "Lübeck.",
-      "Kiel."
+      {"text": "Husum.","is_Correct": false},
+      {"text": "Flensburg.","is_Correct": false},
+      {"text": "Lübeck.","is_Correct": false},
+      {"text": "Kiel.","is_Correct": true}
     ],
-    "correctAnswer": "Kiel."
+    "hasImage": false
   },{
     "id": 448,
     "category": "Schleswig-Holstein",
     "question": "Welches Bundesland ist Schleswig-Holstein?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": true},
+      {"text": "2","is_Correct": false},
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false}
     ],
-    "correctAnswer": "1"
+    "hasImage": true
   },{
     "id": 449,
     "category": "Schleswig-Holstein",
     "question": "Wie nennt man den Regierungschef / die Regierungschefin in Schleswig-Holstein?",
     "options": [
-      "Erster Minister / Erste Ministerin",
-      "Premierminister / Premierministerin",
-      "Bürgermeister / Bürgermeisterin",
-      "Ministerpräsident / Ministerpräsidentin"
+      {"text": "Erster Minister / Erste Ministerin","is_Correct": false},
+      {"text": "Premierminister / Premierministerin","is_Correct": false},
+      {"text": "Bürgermeister / Bürgermeisterin","is_Correct": false},
+      {"text": "Ministerpräsident / Ministerpräsidentin","is_Correct": true}
     ],
-    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+    "hasImage": false
   },{
     "id": 450,
     "category": "Schleswig-Holstein",
     "question": "Welchen Minister / welche Ministerin hat Schleswig-Holstein nicht?",
     "options": [
-      "Justizminister / Justizministerin",
-      "Außenminister / Außenministerin",
-      "Finanzminister / Finanzministerin",
-      "Innenminister / Innenministerin"
+      {"text": "Justizminister / Justizministerin","is_Correct": false},
+      {"text": "Außenminister / Außenministerin","is_Correct": true},
+      {"text": "Finanzminister / Finanzministerin","is_Correct": false},
+      {"text": "Innenminister / Innenministerin","is_Correct": false}
     ],
-    "correctAnswer": "Außenminister / Außenministerin"
+    "hasImage": false
   }
 ]

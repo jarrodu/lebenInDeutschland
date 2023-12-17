@@ -4,110 +4,110 @@
     "category": "Berlin",
     "question": "Welches Wappen gehört zum Bundesland Berlin?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1", "is_Correct": false},
+      {"text": "2", "is_Correct": false},
+      {"text": "3", "is_Correct": false},
+      {"text": "4", "is_Correct": true}
     ],
-    "correctAnswer": "4"
+    "hasImage": true
   },{
     "id": 322,
     "category": "Berlin",
     "question": "Welches ist ein Bezirk von Berlin?",
     "options": [
-      "Altona",
-      "Prignitz",
-      "Pankow",
-      "Demmin"
+      {"text": "Altona", "is_Correct": false},
+      {"text": "Prignitz", "is_Correct": false},
+      {"text": "Pankow", "is_Correct": true},
+      {"text": "Demmin", "is_Correct": false}
     ],
-    "correctAnswer": "Pankow"
+    "hasImage": false
   },{
     "id": 323,
     "category": "Berlin",
     "question": "Für wie viele Jahre wird das Landesparlament in Berlin gewählt?",
     "options": [
-      "3",
-      "4",
-      "5",
-      "6"
+      {"text": "3", "is_Correct": false},
+      {"text": "4", "is_Correct": false},
+      {"text": "5", "is_Correct": true},
+      {"text": "6", "is_Correct": false}
     ],
-    "correctAnswer": "5"
+    "hasImage": false
   },{
     "id": 324,
     "category": "Berlin",
     "question": "Ab welchem Alter darf man in Berlin bei Kommunalwahlen (Wahl der Bezirksverordnetenversammlung) wählen?",
     "options": [
-      "14",
-      "16",
-      "18",
-      "20"
+      {"text": "14", "is_Correct": false},
+      {"text": "16", "is_Correct": true},
+      {"text": "18", "is_Correct": false},
+      {"text": "20", "is_Correct": false}
     ],
-    "correctAnswer": "16"
+    "hasImage": false
   },{
     "id": 325,
     "category": "Berlin",
     "question": "Welche Farben hat die Landesflagge von Berlin?",
     "options": [
-      "blau-weiß-rot",
-      "weiß-rot",
-      "grün-weiß-rot",
-      "schwarz-gelb"
+      {"text": "blau-weiß-rot", "is_Correct": false},
+      {"text": "weiß-rot", "is_Correct": true},
+      {"text": "grün-weiß-rot", "is_Correct": false},
+      {"text": "schwarz-gelb", "is_Correct": false}
     ],
-    "correctAnswer": "weiß-rot"
+    "hasImage": false
   },{
     "id": 326,
     "category": "Berlin",
     "question": "Wo können Sie sich in Berlin über politische Themen informieren?",
     "options": [
-      "beim Ordnungsamt der Gemeinde",
-      "bei den Kirchen",
-      "bei der Verbraucherzentrale",
-      "bei der Landeszentrale für politische Bildung"
+      {"text": "beim Ordnungsamt der Gemeinde", "is_Correct": false},
+      {"text": "bei den Kirchen", "is_Correct": false},
+      {"text": "bei der Verbraucherzentrale", "is_Correct": false},
+      {"text": "bei der Landeszentrale für politische Bildung", "is_Correct": true}
     ],
-    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+    "hasImage": false
   },{
     "id": 327,
     "category": "Berlin",
     "question": "Welches Bundesland ist ein Stadtstaat?",
     "options": [
-      "Berlin",
-      "Saarland",
-      "Brandenburg",
-      "Hessen"
+      {"text": "Berlin", "is_Correct": true},
+      {"text": "Saarland", "is_Correct": false},
+      {"text": "Brandenburg", "is_Correct": false},
+      {"text": "Hessen", "is_Correct": false}
     ],
-    "correctAnswer": "Berlin"
+    "hasImage": false
   },{
     "id": 328,
     "category": "Berlin",
     "question": "Welches Bundesland ist Berlin?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1", "is_Correct": false},
+      {"text": "2", "is_Correct": false},
+      {"text": "3", "is_Correct": false},
+      {"text": "4", "is_Correct": true}
     ],
-    "correctAnswer": "4"
+    "hasImage": true
   },{
     "id": 329,
     "category": "Berlin",
     "question": "Wie nennt man den Regierungschef / die Regierungschefin des Stadtstaates Berlin?",
     "options": [
-      "Ministerpräsident / Ministerpräsidentin",
-      "Oberbürgermeister / Oberbürgermeisterin",
-      "Präsident / Präsidentin des Senats",
-      "Regierender Bürgermeister / Regierende Bürgermeisterin"
+      {"text": "Ministerpräsident / Ministerpräsidentin", "is_Correct": false},
+      {"text": "Oberbürgermeister / Oberbürgermeisterin", "is_Correct": false},
+      {"text": "Präsident / Präsidentin des Senats", "is_Correct": false},
+      {"text": "Regierender Bürgermeister / Regierende Bürgermeisterin", "is_Correct": true}
     ],
-    "correctAnswer": "Regierender Bürgermeister / Regierende Bürgermeisterin"
+    "hasImage": false
   },{
     "id": 330,
     "category": "Berlin",
     "question": "Welchen Senator / welche Senatorin hat Berlin nicht?",
     "options": [
-      "Finanzsenator / Finanzsenatorin",
-      "Innensenator / Innensenatorin",
-      "Senator / Senatorin für Außenbeziehungen",
-      "Justizsenator / Justizsenatorin"
+      {"text": "Finanzsenator / Finanzsenatorin", "is_Correct": false},
+      {"text": "Innensenator / Innensenatorin", "is_Correct": false},
+      {"text": "Senator / Senatorin für Außenbeziehungen", "is_Correct": true},
+      {"text": "Justizsenator / Justizsenatorin", "is_Correct": false}
     ],
-    "correctAnswer": "Senator / Senatorin für Außenbeziehungen"
+    "hasImage": false
   }
 ]

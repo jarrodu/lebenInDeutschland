@@ -4,110 +4,110 @@
     "category": "Thüringen",
     "question": "Welches Wappen gehört zum Freistaat Thüringen?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": false},
+      {"text": "2","is_Correct": false},
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": true}
     ],
-    "correctAnswer": "4"
+    "hasImage": true
   },{
     "id": 452,
     "category": "Thüringen",
     "question": "Welches ist ein Landkreis in Thüringen?",
     "options": [
-      "Ammerland",
-      "Altötting",
-      "Nordfriesland",
-      "Wartburgkreis"
+      {"text": "Ammerland","is_Correct": false},
+      {"text": "Altötting","is_Correct": false},
+      {"text": "Nordfriesland","is_Correct": false},
+      {"text": "Wartburgkreis","is_Correct": true}
     ],
-    "correctAnswer": "Wartburgkreis"
+    "hasImage": false
   },{
     "id": 453,
     "category": "Thüringen",
     "question": "Für wie viele Jahre wird der Landtag in Thüringen gewählt?",
     "options": [
-      "3",
-      "4",
-      "5",
-      "6"
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false},
+      {"text": "5","is_Correct": true},
+      {"text": "6","is_Correct": false}
     ],
-    "correctAnswer": "5"
+    "hasImage": false
   },{
     "id": 454,
     "category": "Thüringen",
     "question": "Ab welchem Alter darf man in Thüringen bei Kommunalwahlen wählen?",
     "options": [
-      "14",
-      "18",
-      "16",
-      "20"
+      {"text": "14","is_Correct": false},
+      {"text": "18","is_Correct": false},
+      {"text": "16","is_Correct": true},
+      {"text": "20","is_Correct": false}
     ],
-    "correctAnswer": "16"
+    "hasImage": false
   },{
     "id": 455,
     "category": "Thüringen",
     "question": "Welche Farben hat die Landesflagge von Thüringen?",
     "options": [
-      "blau-weiß-rot",
-      "weiß-rot",
-      "grün-weiß-rot",
-      "schwarz-gelb"
+      {"text": "blau-weiß-rot","is_Correct": false},
+      {"text": "weiß-rot","is_Correct": true},
+      {"text": "grün-weiß-rot","is_Correct": false},
+      {"text": "schwarz-gelb","is_Correct": false}
     ],
-    "correctAnswer": "weiß-rot"
+    "hasImage": false
   },{
     "id": 456,
     "category": "Thüringen",
     "question": "Wo können Sie sich in Thüringen über politische Themen informieren?",
     "options": [
-      "bei den Kirchen",
-      "bei der Verbraucherzentrale",
-      "bei der Landeszentrale für politische Bildung",
-      "beim Ordnungsamt der Gemeinde"
+      {"text": "bei den Kirchen","is_Correct": false},
+      {"text": "bei der Verbraucherzentrale","is_Correct": false},
+      {"text": "bei der Landeszentrale für politische Bildung","is_Correct": true},
+      {"text": "beim Ordnungsamt der Gemeinde","is_Correct": false}
     ],
-    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+    "hasImage": false
   },{
     "id": 457,
     "category": "Thüringen",
     "question": "Die Landeshauptstadt von Thüringen heißt …",
     "options": [
-      "Eisenach.",
-      "Erfurt.",
-      "Gera.",
-      "Jena."
+      {"text": "Eisenach.","is_Correct": false},
+      {"text": "Erfurt.","is_Correct": true},
+      {"text": "Gera.","is_Correct": false},
+      {"text": "Jena.","is_Correct": false}
     ],
-    "correctAnswer": "Erfurt."
+    "hasImage": false
   },{
     "id": 458,
     "category": "Thüringen",
     "question": "Welches Bundesland ist Thüringen?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": false},
+      {"text": "2","is_Correct": true},
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false}
     ],
-    "correctAnswer": "2"
+    "hasImage": true
   },{
     "id": 459,
     "category": "Thüringen",
     "question": "Wie nennt man den Regierungschef / die Regierungschefin in Thüringen?",
     "options": [
-      "Erster Minister / Erste Ministerin",
-      "Premierminister / Premierministerin",
-      "Bürgermeister / Bürgermeisterin",
-      "Ministerpräsident / Ministerpräsidentin"
+      {"text": "Erster Minister / Erste Ministerin","is_Correct": false},
+      {"text": "Premierminister / Premierministerin","is_Correct": false},
+      {"text": "Bürgermeister / Bürgermeisterin","is_Correct": false},
+      {"text": "Ministerpräsident / Ministerpräsidentin","is_Correct": true}
     ],
-    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+    "hasImage": false
   },{
     "id": 460,
     "category": "Thüringen",
     "question": "Welchen Minister / welche Ministerin hat Thüringen nicht?",
     "options": [
-      "Justizminister / Justizministerin",
-      "Außenminister / Außenministerin",
-      "Finanzminister / Finanzministerin",
-      "Innenminister / Innenministerin"
+      {"text": "Justizminister / Justizministerin","is_Correct": false},
+      {"text": "Außenminister / Außenministerin","is_Correct": true},
+      {"text": "Finanzminister / Finanzministerin","is_Correct": false},
+      {"text": "Innenminister / Innenministerin","is_Correct": false}
     ],
-    "correctAnswer": "Außenminister / Außenministerin"
+    "hasImage": false
   }
 ]

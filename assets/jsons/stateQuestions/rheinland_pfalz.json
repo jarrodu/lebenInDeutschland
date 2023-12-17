@@ -4,110 +4,110 @@
     "category": "Rheinland-Pfalz",
     "question": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": true},
+      {"text": "2","is_Correct": false},
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false}
     ],
-    "correctAnswer": "1"
+    "hasImage": true
   },{
     "id": 402,
     "category": "Rheinland-Pfalz",
     "question": "Welches ist ein Landkreis in Rheinland-Pfalz?",
     "options": [
-      "Westerwaldkreis",
-      "Altötting",
-      "Emsland",
-      "Prignitz"
+      {"text": "Westerwaldkreis","is_Correct": true},
+      {"text": "Altötting","is_Correct": false},
+      {"text": "Emsland","is_Correct": false},
+      {"text": "Prignitz","is_Correct": false}
     ],
-    "correctAnswer": "Westerwaldkreis"
+    "hasImage": false
   },{
     "id": 403,
     "category": "Rheinland-Pfalz",
     "question": "Für wie viele Jahre wird der Landtag in Rheinland-Pfalz gewählt?",
     "options": [
-      "3",
-      "4",
-      "5",
-      "6"
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false},
+      {"text": "5","is_Correct": true},
+      {"text": "6","is_Correct": false}
     ],
-    "correctAnswer": "5"
+    "hasImage": false
   },{
     "id": 404,
     "category": "Rheinland-Pfalz",
     "question": "Ab welchem Alter darf man in Rheinland-Pfalz bei Kommunalwahlen wählen?",
     "options": [
-      "14",
-      "16",
-      "18",
-      "20"
+      {"text": "14","is_Correct": false},
+      {"text": "16","is_Correct": false},
+      {"text": "18","is_Correct": true},
+      {"text": "20","is_Correct": false}
     ],
-    "correctAnswer": "18"
+    "hasImage": false
   },{
     "id": 405,
     "category": "Rheinland-Pfalz",
     "question": "Welche Farben hat die Landesflagge von Rheinland-Pfalz?",
     "options": [
-      "weiß-rot",
-      "schwarz-rot-gold",
-      "schwarz-gelb",
-      "grün-weiß-rot"
+      {"text": "weiß-rot","is_Correct": false},
+      {"text": "schwarz-rot-gold","is_Correct": true},
+      {"text": "schwarz-gelb","is_Correct": false},
+      {"text": "grün-weiß-rot","is_Correct": false}
     ],
-    "correctAnswer": "schwarz-rot-gold"
+    "hasImage": false
   },{
     "id": 406,
     "category": "Rheinland-Pfalz",
     "question": "Wo können Sie sich in Rheinland-Pfalz über politische Themen informieren?",
     "options": [
-      "bei den Kirchen",
-      "bei der Verbraucherzentrale",
-      "beim Ordnungsamt der Gemeinde",
-      "bei der Landeszentrale für politische Bildung"
+      {"text": "bei den Kirchen","is_Correct": false},
+      {"text": "bei der Verbraucherzentrale","is_Correct": false},
+      {"text": "beim Ordnungsamt der Gemeinde","is_Correct": false},
+      {"text": "bei der Landeszentrale für politische Bildung","is_Correct": true}
     ],
-    "correctAnswer": "bei der Landeszentrale für politische Bildung"
+    "hasImage": false
   },{
     "id": 407,
     "category": "Rheinland-Pfalz",
     "question": "Die Landeshauptstadt von Rheinland-Pfalz heißt …",
     "options": [
-      "Mainz.",
-      "Kaiserslautern.",
-      "Ludwigshafen.",
-      "Koblenz."
+      {"text": "Mainz.","is_Correct": true},
+      {"text": "Kaiserslautern.","is_Correct": false},
+      {"text": "Ludwigshafen.","is_Correct": false},
+      {"text": "Koblenz.","is_Correct": false}
     ],
-    "correctAnswer": "Mainz."
+    "hasImage": false
   },{
     "id": 408,
     "category": "Rheinland-Pfalz",
     "question": "Welches Bundesland ist Rheinland-Pfalz?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      {"text": "1","is_Correct": true},
+      {"text": "2","is_Correct": false},
+      {"text": "3","is_Correct": false},
+      {"text": "4","is_Correct": false}
     ],
-    "correctAnswer": "1"
+    "hasImage": true
   },{
     "id": 409,
     "category": "Rheinland-Pfalz",
     "question": "Wie nennt man den Regierungschef / die Regierungschefin in Rheinland-Pfalz?",
     "options": [
-      "Erster Minister / Erste Ministerin",
-      "Premierminister / Premierministerin",
-      "Bürgermeister / Bürgermeisterin",
-      "Ministerpräsident / Ministerpräsidentin"
+      {"text": "Erster Minister / Erste Ministerin","is_Correct": false},
+      {"text": "Premierminister / Premierministerin","is_Correct": false},
+      {"text": "Bürgermeister / Bürgermeisterin","is_Correct": false},
+      {"text": "Ministerpräsident / Ministerpräsidentin","is_Correct": true}
     ],
-    "correctAnswer": "Ministerpräsident / Ministerpräsidentin"
+    "hasImage": false
   },{
     "id": 410,
     "category": "Rheinland-Pfalz",
     "question": "Welchen Minister / welche Ministerin hat Rheinland-Pfalz nicht?",
     "options": [
-      "Justizminister / Justizministerin",
-      "Außenminister / Außenministerin",
-      "Finanzminister / Finanzministerin",
-      "Innenminister / Innenministerin"
+      {"text": "Justizminister / Justizministerin","is_Correct": false},
+      {"text": "Außenminister / Außenministerin","is_Correct": true},
+      {"text": "Finanzminister / Finanzministerin","is_Correct": false},
+      {"text": "Innenminister / Innenministerin","is_Correct": false}
     ],
-    "correctAnswer": "Außenminister / Außenministerin"
+    "hasImage": false
   }
 ]
